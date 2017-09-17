@@ -1,5 +1,14 @@
-body {
+body{
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  /*background-image: linear-gradient(32DEG, #ebbba7 0%, #cfc7f8 100%);*/
+}
+*,*::after,*::before{
+  box-sizing: border-box !important;
+}
+p, div, span{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+*:focus {
+    outline: none;
 }
