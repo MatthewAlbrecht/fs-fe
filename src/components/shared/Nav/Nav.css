@@ -1,0 +1,124 @@
+
+.navbar {
+  background: linear-gradient(90deg, #9100FF, #0000FF);
+  left: 0;
+  position: fixed;
+  top:0;
+  width: 100vw;
+}
+
+.navbar-pad {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 25px;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-logo {
+  background: url('../../../assets/svgs/logo.svg');
+  background-size: cover;
+  color: white;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  width: 75.4px;
+  text-indent: -1000em;
+  z-index: 6;
+}
+.nav-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-button {
+  cursor: pointer;
+  height: 18px;
+  margin: 0 12px;
+  width: 18px;
+}
+
+.nav-button.person {
+  border-radius: 50%;
+  height: 32px;
+  position: relative;
+  width: 32px;
+  z-index: 6;
+
+}
+
+.nav-button.facebook {
+  margin-left: 6px;
+}
+
+.nav-button.search {
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+  height: auto;
+  margin: 0 6px 0 4px;
+  padding: 8px;
+  width: auto;
+}
+
+.nav-button.spotify, .nav-button.twitter, .nav-button.facebook, .nav-button.search {
+  display: none;
+}
+
+.nav-button.menu {
+  height: 24px;
+  width: 24px;
+}
+
+.mobile-nav-bar {
+  background: linear-gradient(90deg, #9100FF, #0000FF);
+  height: 36px;
+  left: 0;
+  position: fixed;
+  top: 63px;
+  width: 100vw;
+}
+
+.mobile-nav-bar-item {
+  color: white;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 50%;
+}
+.mobile-nav-bar-item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav-bar-item + .mobile-nav-bar-item {
+  border-left: 1px white solid;
+}
+
+@media(min-width: 736px) {
+  .navbar-pad {
+    padding: 0 25px;
+  }
+
+  .mobile-nav-bar {
+    display: none;
+  }
+
+  .nav-button.menu {
+    display: none;
+  }
+
+  .nav-button.spotify, .nav-button.twitter, .nav-button.facebook, .nav-button.search {
+    display: inherit;
+  }
+}
+
+@media(min-width: 1024px) {
+  .navbar-pad {
+    padding: 0 100px;
+  }
+}

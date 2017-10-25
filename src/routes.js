@@ -1,14 +1,13 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import App from './App';
-import Splash from './Splash';
-import LoginCallback from './LoginCallback';
 
+import Home from './components/views/Home'
+import Nav from './components/shared/Nav'
 
 const routes = (
     <div>
-      <Route exact path='/' component={Splash}/>
-      <Route path='/callback' component={LoginCallback}/>
+      <Nav />
+      <Route path='/' component={Home}/>
     </div>
 );
 
